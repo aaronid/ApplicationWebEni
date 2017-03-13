@@ -153,12 +153,20 @@
     <servlet-name>ManagerStagiaireServlet</servlet-name>
     <url-pattern>/ManagerStagiaireServlet</url-pattern>
   </servlet-mapping>
-  
   <resource-ref>
-  	<description>Ici c'est mon pool !!!</description>
-  	<res-ref-name>jdbc/monPool</res-ref-name>
-  	<res-type>javax.sql.DataSource</res-type>
-  	<res-auth>Container</res-auth>
+    <description>Ici c'est mon pool !!!</description>
+    <res-ref-name>jdbc/monPool</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
   </resource-ref>
-  
+  <servlet>
+    <description></description>
+    <display-name>ManagerAnimateurServlet</display-name>
+    <servlet-name>ManagerAnimateurServlet</servlet-name>
+    <servlet-class>fr.eni.servlet.ManagerAnimateurServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManagerAnimateurServlet</servlet-name>
+    <url-pattern>/ManagerAnimateurServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
